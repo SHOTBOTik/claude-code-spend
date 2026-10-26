@@ -1,0 +1,32 @@
+{
+  "name": "claude-code-spend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Token spend of Claude Code sessions and Claude Agent SDK messages, with the prompt cache broken down: 5m and 1h writes, reads, hit rate.",
+  "type": "module",
+  "license": "MIT",
+  "author": "SHOTBOTik (https://shotbotik.me)",
+  "homepage": "https://shotbotik.me",
+  "keywords": [
+    "claude",
+    "claude-code",
+    "agent-sdk",
+    "tokens",
+    "prompt-caching",
+    "cost"
+  ],
+  "engines": {
+    "node": ">=22.18"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --test \"test/**/*.test.ts\""
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "typescript": "^5.9.3"
+  }
+}
